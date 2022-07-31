@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+}
+body{
+	background-color: white;
+	position: relative;
+	margin: 0px;
+}
+.chat-wrapper{
+	width: 100%;
+	height: 100vh;
+}
+.chat-wrapper-header{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    background: #ccc;
+}
+.chat-wrapper-header .live-chat{
+	font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 24px;
+color: #6600CC;
+}
+.chat-wrapper-header .close-chat{
+	font-size: 16px;
+	color: #202020;
+}
+.chat-body{
+	padding-top: 1rem;
+	height: 75vh;
+    overflow: scroll;
+}
+.chat-row .chat-text{
+	display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.chat-footer{
+	position: absolute;
+	bottom: 1%;
+	width: 100%;
+}
+.chat-footer .footer-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.chat-footer .footer-wrapper .chat-input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding:  0.5rem;
+	width: 70%;
+}
+.chat-name{
+	font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #6600CC;
+font-stretch: 100; 
+}
+.footer-wrapper i{
+	color: #6600CC;
+}
